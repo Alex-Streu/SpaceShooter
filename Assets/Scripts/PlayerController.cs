@@ -16,7 +16,8 @@ public class Boundary3D
 public class PlayerController : MonoBehaviour {
 
 	public float speed;
-	public float angularSpeed;
+	public float hAngularSpeed;
+	public float vAngularSpeed;
 	public Boundary2D boundary2d;
 	public Boundary3D boundary3d;
 	
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 				Mathf.Clamp (rigidbody.position.z, boundary2d.zMin, boundary2d.zMax)
 			);
 		
-		rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.y * -angularSpeed, 0.0f, rigidbody.velocity.x * -angularSpeed);
+		rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.y * -vAngularSpeed, 0.0f, rigidbody.velocity.x * -hAngularSpeed);
 	}
 	
 	public void SetMode(bool _3d)
