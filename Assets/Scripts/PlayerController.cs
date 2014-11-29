@@ -15,11 +15,12 @@ public class Boundary3D
 
 public class PlayerController : MonoBehaviour {
 
-	public float speed;
-	public float hAngularSpeed;
-	public float vAngularSpeed;
-	public Boundary2D boundary2d;
-	public Boundary3D boundary3d;
+	public float _speed;
+	public float _3Dspeed;
+	public float _hAngularSpeed;
+	public float _vAngularSpeed;
+	public Boundary2D _boundary2d;
+	public Boundary3D _boundary3d;
 	
 	bool is3D;
 	
@@ -28,31 +29,34 @@ public class PlayerController : MonoBehaviour {
 		float hMove = Input.GetAxis ("Horizontal");
 		float vMove = Input.GetAxis ("Vertical");
 		Vector3 movement = is3D ? new Vector3(hMove, vMove, 0.0f) : new Vector3(hMove, 0.0f, vMove);
-		rigidbody.velocity = movement * speed;
+		rigidbody.velocity = movement * _speed;
 		
 		rigidbody.position = is3D ?
 			new Vector3(
-				Mathf.Clamp(rigidbody.position.x, boundary3d.xMin, boundary3d.xMax),
-				Mathf.Clamp (rigidbody.position.y, boundary3d.yMin, boundary3d.yMax),
+				Mathf.Clamp(rigidbody.position.x, _boundary3d.xMin, _boundary3d.xMax),
+				Mathf.Clamp (rigidbody.position.y, _boundary3d.yMin, _boundary3d.yMax),
 				0.0f
 				) :
 			new Vector3(
-				Mathf.Clamp(rigidbody.position.x, boundary2d.xMin, boundary2d.xMax),
+				Mathf.Clamp(rigidbody.position.x, _boundary2d.xMin, _boundary2d.xMax),
 				0.0f,
-				Mathf.Clamp (rigidbody.position.z, boundary2d.zMin, boundary2d.zMax)
+				0.0f//Mathf.Clamp (rigidbody.position.z, boundary2d.zMin, boundary2d.zMax)
 			);
 		
-		rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.y * -vAngularSpeed, 0.0f, rigidbody.velocity.x * -hAngularSpeed);
+		rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.y * -_vAngularSpeed, 0.0f, rigidbody.velocity.x * -_hAngularSpeed);
 	}
 	
 	public void SetMode(bool _3d)
 	{
 		is3D = _3d;
 		if (is3D)
+		{
 			rigidbody.position = new Vector3(
-				Mathf.Clamp(rigidbody.position.x, boundary3d.xMin, boundary3d.xMax),
-				Mathf.Clamp (rigidbody.position.y, boundary3d.yMin, boundary3d.yMax),
+				Mathf.Clamp(rigidbody.position.x, _boundary3d.xMin, _boundary3d.xMax),
+				Mathf.Clamp (rigidbody.position.y, _boundary3d.yMin, _boundary3d.yMax),
 				0.0f
 				);
+			_speed = _3Dspeed;
+		}
 	}
 }

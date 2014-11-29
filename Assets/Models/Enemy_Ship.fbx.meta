@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 7c802025fe5db9c4faa687460e2fcb13
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Ambient_Omni_Light
+    100002: Backgrounds
+    100004: Camera
+    100006: Cameras
+    100008: Default_Infinite_Light
+    100010: Default_Infinite_Light_2
+    100012: Design_Layer_1
+    100014: //RootNode
+    100016: Extrude
+    100018: Extrude_Along_Path
+    100020: Extrude_Along_Path_2
+    100022: Extrude_Along_Path_3
+    100024: Extrude_Along_Path_4
+    100026: Fillet
+    100028: Geometry
+    100030: Hemisphere
+    100032: Lights
+    100034: Null
+    100036: Solid_Addition
+    100038: Sphere
+    400000: Ambient_Omni_Light
+    400002: Backgrounds
+    400004: Camera
+    400006: Cameras
+    400008: Default_Infinite_Light
+    400010: Default_Infinite_Light_2
+    400012: Design_Layer_1
+    400014: //RootNode
+    400016: Extrude
+    400018: Extrude_Along_Path
+    400020: Extrude_Along_Path_2
+    400022: Extrude_Along_Path_3
+    400024: Extrude_Along_Path_4
+    400026: Fillet
+    400028: Geometry
+    400030: Hemisphere
+    400032: Lights
+    400034: Null
+    400036: Solid_Addition
+    400038: Sphere
+    2300000: Extrude
+    2300002: Extrude_Along_Path
+    2300004: Extrude_Along_Path_2
+    2300006: Extrude_Along_Path_3
+    2300008: Extrude_Along_Path_4
+    2300010: Fillet
+    2300012: Hemisphere
+    2300014: Solid_Addition
+    2300016: Sphere
+    3300000: Extrude
+    3300002: Extrude_Along_Path
+    3300004: Extrude_Along_Path_2
+    3300006: Extrude_Along_Path_3
+    3300008: Extrude_Along_Path_4
+    3300010: Fillet
+    3300012: Hemisphere
+    3300014: Solid_Addition
+    3300016: Sphere
+    4300000: Solid_Addition
+    4300002: Extrude_Along_Path
+    4300004: Fillet
+    4300006: Sphere
+    4300008: Hemisphere
+    4300010: Extrude
+    4300012: Extrude_Along_Path_2
+    4300014: Extrude_Along_Path_3
+    4300016: Extrude_Along_Path_4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
