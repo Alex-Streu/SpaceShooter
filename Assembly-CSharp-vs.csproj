@@ -57,8 +57,12 @@
      <Compile Include="Assets\Done\Done_Scripts\Done_RandomRotator.cs" />
      <Compile Include="Assets\Done\Done_Scripts\Done_WeaponController.cs" />
      <Compile Include="Assets\Scripts\BoundaryController.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\EnemyLaserController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\LaserController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerLaserController.cs" />
      <Compile Include="Assets\Scripts\StarController.cs" />
      <Compile Include="Assets\Scripts\StarsManager.cs" />
  <Reference Include="UnityEngine.UI">

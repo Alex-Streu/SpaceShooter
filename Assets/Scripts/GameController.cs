@@ -14,15 +14,12 @@ public class GameController : MonoBehaviour {
 	
 	void Update()
 	{
-		if (Time.realtimeSinceStartup > 4.0f && Time.realtimeSinceStartup < 5.0f)
+		if (Time.realtimeSinceStartup > 4.0f && Time.realtimeSinceStartup < 4.1f)
 			Select3D ();
 	}
 	
 	void Select3D()
 	{
-		//Camera2D.camera.enabled = false;
-		//Camera3D.camera.enabled = true;
-		//Camera2D.animation.enabled = true;
 		Camera2D.animation.Play();
 		Player.SetMode(true);
 	}
