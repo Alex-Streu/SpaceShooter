@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour {
 			);
 		
 		//Rotate ship for effect
-		rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.y * -_vAngularSpeed, 0.0f, rigidbody.velocity.x * -_hAngularSpeed);
+		rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.y * -_vAngularSpeed, _is3d ? rigidbody.velocity.x * _vAngularSpeed : 0.0f, rigidbody.velocity.x * -_hAngularSpeed);
 	}
 	
 	//Set mode between 2d and 3d
